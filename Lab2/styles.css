@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Oswald-LIght;
+    src: url('fonts/Oswald-Light.ttf');
+}
+
+@font-face {
+    font-family: Oswald-Bold;
+    src: url('fonts/Oswald-Bold.ttf');
+}
+
+@font-face {
+    font-family: PlayfairDisplay-Bold;
+    src: url('fonts/PlayfairDisplay-Bold.ttf');
+}
+
+@font-face {
+    font-family: Caveat-Regular;
+    src: url('fonts/Caveat-Regular.ttf');
+}
+
+body {
+    font-size: 20px;
+    background-color: #c08d28a4;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.one {
+    font-family: Oswald-Light, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.one p {
+    font-weight: 700;
+}
+
+.two {
+    font-family: PlayfairDisplay-Bold, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.three {
+    font-family: Caveat-Regular, 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+img {
+    border-radius: 25px;
+}
+
+.table-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-right {
+    margin-left: auto;
+    margin-right: 0;
+}

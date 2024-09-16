@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Анкета для регистрации на онлайн-курс</title>
+</head>
+
+<body>
+    <h1>Регистрация на онлайн-курс по программированию</h1>
+    <form action="/submit-course" method="post">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <label for="userName">Имя:</label>
+            <input type="name" id="userName" name="name"><br>
+            <label for="userEmail">Электронная почта:</label>
+            <input type="email" id="userEmail" name="email"><br>
+            <label for="userTel">Телефон:</label>
+            <input type="tel" id="userTel" name="tel" placeholder="+375-XX-XXX-XX-XX"><br>
+            <label for="userPassword">Введите пароль:</label>
+            <input type="password" id="userPassword" name="password"><br>
+            <label for="userPhoto">Добавьте ваше фото</label>
+            <input type="file" id="userPhoto" name="image"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Дополнительная информация</legend>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Подписаться на рассылку</label><br>
+            <input type="checkbox" id="newsletter1" name="newsletter1" required>
+            <label for="newsletter1">Согласен(-на) на обработку персональных данных</label><br>
+            <p>Выберите язык программирования, который хотели бы изучить на курсе: </p>
+            <input type="radio" id="prog_language1" name="prog_language" value="prog_language1">
+            <label for="prog_language1">JAVA</label>
+            <input type="radio" id="prog_language2" name="prog_language" value="prog_language2">
+            <label for="prog_language2">Python</label>
+            <input type="radio" id="prog_language3" name="prog_language" value="prog_language3">
+            <label for="prog_language3">PHP</label><br>
+            <label for="userCountry">Из какой вы страны? </label>
+            <select name="country" id="userCountry">
+            <option value="belarus">Беларусь</option>
+            <option value="russia">Россия</option>
+            <option value="kazakhstan">Казахстан</option>
+            <option value="other">Другое</option></select><br>
+        </fieldset>
+        <input type="submit" value="Отправить данные">
+        <input type="reset" value="Сбросить форму">
+    </form>
+</body>
+
+</html>
